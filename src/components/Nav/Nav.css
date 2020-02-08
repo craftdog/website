@@ -1,0 +1,79 @@
+nav {
+    background-color: var(--main-color);
+    height: auto;
+    padding-top: 38px;
+    padding-bottom: 0;
+}
+
+nav .inner {
+    display: block;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+}
+
+nav a.btn, nav a.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: #5A48D8;
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+    padding: 15px 22px;
+    margin: 0;
+    float: right;
+}
+
+nav a.btn {
+    font-size: 16px;
+    padding: 13px 20px;
+    margin: 2px 2px 2px 22px;
+    font-weight: 700;
+}
+
+nav a.nav-link {
+    color: white;
+    background-color: inherit;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -ms-transition: opacity 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+}
+
+nav a.nav-link:hover {
+    opacity: 1;
+}
+
+nav a#logo {
+    padding-top: 0.75%;
+    float: left;
+    width: 160px;
+}
+
+nav a img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    nav a.nav-link, nav a.btn {
+        display: none;
+    }
+
+    nav a#logo {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        width: 55%;
+    }
+
+    #mast {
+        padding-top: 0;
+    }
+}

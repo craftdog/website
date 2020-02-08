@@ -1,0 +1,35 @@
+.feature-card {
+    background: #FFFFFF;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.006),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.008),
+            0 12.5px 10px rgba(0, 0, 0, 0.01),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.012),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.014),
+            0 100px 80px rgba(0, 0, 0, 0.02)
+;
+
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 17px;
+    height: 360px;
+    -webkit-transition: transform 0.2s ease-in-out;
+    -moz-transition: transform 0.2s ease-in-out;
+    -ms-transition: transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-card .gutter-wrapper {
+    display: block;
+    margin: 20px 20px;
+}
+
+.feature-card:hover {
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+}

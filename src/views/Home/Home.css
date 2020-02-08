@@ -1,0 +1,20 @@
+:root {
+    --main-color: #5A48D8;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'WorkSans-Medium', sans-serif;
+    background-color: #F6F6F9;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+}

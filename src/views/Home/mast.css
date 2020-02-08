@@ -1,0 +1,53 @@
+#mast {
+    background-color: var(--main-color);
+    color: white;
+    min-height: 70vh;
+    padding-top: 50px;
+}
+
+#mast h1 {
+    color: #FFFFFF;
+    padding: 0;
+    margin: calc(4vw) 0 0 0;
+}
+
+#mast p {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0;
+    margin: 32px 0;
+    color: rgba(255,255,255,0.60);
+}
+
+#mast a.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: #5A48D8;
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+    padding: 15px 22px;
+}
+
+#mast a.btn:not(.secondary):after {
+    content: "→";
+    padding-left: 12px;
+    padding-right: 5px;
+    -webkit-transition: padding 0.2s ease-in-out;
+    -moz-transition: padding 0.15s ease-in-out;
+    -ms-transition: padding 0.15s ease-in-out;
+    -o-transition: padding 0.15s ease-in-out;
+    transition: padding 0.2s ease-in-out;
+}
+
+#mast a.btn:hover:after {
+    padding-left: 17px;
+    padding-right: 0px;
+}
+
+#mast a.btn.secondary {
+    color: white;
+    background-color: inherit;
+}
