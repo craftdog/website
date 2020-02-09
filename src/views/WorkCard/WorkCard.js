@@ -9,12 +9,13 @@ class WorkCard extends React.Component {
 
     render() {
         return(
-            <Col md={5.5} className="work-card">
-                {/*<img src={this.props.photo} style={{width: "100%"}} alt=""/>*/}
-                {/*<span className="gutter-wrapper">*/}
-                {/*    <h3>{this.props.name}</h3>*/}
-                {/*    <p>{this.props.desc}</p>*/}
-                {/*</span>*/}
+            <Col lg={5.9} md={5.8} className="work-card">
+                <img src={this.props.photo} style={{width: "100%"}} alt=""/>
+                <span className="gutter-wrapper">
+                    <h3>{this.props.name}Train Tracker</h3>
+                    <p>{this.props.desc}A progressive web app to monitor and find CTA trains near you.</p>
+                    <a href="" className="btn">Link</a>
+                </span>
             </Col>
         );
     }

@@ -1,5 +1,6 @@
-import {Col, Row} from "react-grid-system";
 import React from 'react';
+import {Col} from "react-grid-system";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './FeatureCard.css';
 
 class FeatureCard extends React.Component {
@@ -9,12 +10,10 @@ class FeatureCard extends React.Component {
 
     render() {
         return(
-            <Col md={3.7} className="feature-card">
-                {/*<img src={this.props.photo} style={{width: "100%"}} alt=""/>*/}
-                {/*<span className="gutter-wrapper">*/}
-                {/*    <h3>{this.props.name}</h3>*/}
-                {/*    <p>{this.props.desc}</p>*/}
-                {/*</span>*/}
+            <Col md={3.8} className="feature-card">
+                    <span className="feature-icon"><FontAwesomeIcon icon={this.props.icon} /></span>
+                    <h3>{this.props.name}</h3>
+                    <p>{this.props.desc}</p>
             </Col>
         );
     }

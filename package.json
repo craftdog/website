@@ -4,13 +4,16 @@
   "description": "",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "svgr": "svgr -d src/Icons/ src/assets/"
   },
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@svgr/cli": "^5.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-grid-system": "^6.1.0"

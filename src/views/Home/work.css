@@ -4,7 +4,7 @@
 }
 
 #work h1 {
-    color: #0C041F;
+    color: var(--magenta);
 }
 
 #work .feature-card-wrapper {

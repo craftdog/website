@@ -2,13 +2,13 @@
     background-color: var(--main-color);
     color: white;
     min-height: 70vh;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 #mast h1 {
     color: #FFFFFF;
     padding: 0;
-    margin: calc(4vw) 0 0 0;
+    margin: 0;
 }
 
 #mast p {

@@ -13,12 +13,45 @@
     border-radius: 15px;
     overflow: hidden;
     padding: 0 !important;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
-#about .gutter-wrapper {
+#about .profile-card img {
+    padding: 1.5vw;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#about .info-wrapper {
     display: block;
     padding: 0 20px;
+}
+
+#about .info-wrapper .bio-link {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#about .skills {
+    list-style: none;
+    padding: 0;
+}
+
+#about .skills li {
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-weight: 600;
+    background-color: white;
+    color: #0C041F;
+}
+
+
+@media screen and (max-width: 768px) {
+    #about .profile-card img {
+        padding: 20px 80px;
+    }
 }
 
 #about h1 {
@@ -28,6 +61,7 @@
 #about h2 {
     font-weight: 600;
     font-size: 36px;
+    line-height: 1.5;
 }
 
 #about h3 {
@@ -38,4 +72,5 @@
 #about p {
     font-size: 20px;
     margin-top: 0;
+    opacity: 0.6;
 }
