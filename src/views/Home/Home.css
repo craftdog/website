@@ -1,5 +1,5 @@
 :root {
-    --main-color: #5A48D8;
+    --main-color: rgb(90, 72, 216);
     --dark-color: #0C041F;
     --light-color: #F6F6F9;
     --red: #EF5454;
@@ -12,7 +12,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'WorkSans-Medium', sans-serif;
+    font-family: 'Circular Std', sans-serif;
     background-color: var(--light-color);
     scroll-behavior: smooth;
 }
@@ -25,3 +25,7 @@ h1 {
     font-weight: 700;
     font-size: 40px;
 }
+
+/**:hover {*/
+/*    transform: translateY(0) !important;*/
+/*}*/

@@ -1,5 +1,6 @@
 import React from 'react';
-import WireframeImage from "../../assets/Hero.png";
+import HeroPNG from "../../assets/Hero2.png";
+import HeroVector from "../../Icons/Hero"
 import './HeaderImage.css'
 
 class HeaderImage extends React.Component {
@@ -10,7 +11,8 @@ class HeaderImage extends React.Component {
     render() {
         return(
             <>
-                <img src={WireframeImage} style={{width: "100%"}} alt=""/>
+                <img src={HeroPNG} style={{width: "100%"}} alt=""/>
+                {/*<HeroVector />*/}
             </>
         );
     }

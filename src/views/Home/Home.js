@@ -10,7 +10,7 @@ import FeatureCard from "../FeatureCard/FeatureCard";
 import WorkCard from "../WorkCard/WorkCard";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faCodeBranch, faPencilRuler, faSitemap } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faCodeBranch, faPencilRuler, faSitemap, faSubway, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import Icon from '../../Icons/Icon'
 import HeaderImage from "../../components/HeaderImage/HeaderImage";
 
@@ -28,7 +28,7 @@ class Home extends React.Component {
                         <Row>
                             <Col lg={6} md={7}>
                                 <h1>
-                                    &mdash;<br />
+                                    <span className="dash">&mdash;<br /></span>
                                     Hi, we're Craftdog.<br />
                                     We make cool software.
                                 </h1>
@@ -64,21 +64,41 @@ class Home extends React.Component {
                                 <FeatureCard
                                     icon={faSitemap}
                                     name="Product Support"
-                                    desc=""
+                                    desc="Great software has to be usable. We do our research to ensure our products remain accessible to the most users possible."
                                     photo="https://via.placeholder.com/400x400"
                                 />
                             </Row>
                         </div>
                         <span id="our-work" />
                         <h1>Our Work</h1>
-                        <Row  justify="between">
-                            <WorkCard />
-                            <WorkCard />
+                        <Row justify="between">
+                            <WorkCard
+                                icon={faSubway}
+                                name="L-Scout"
+                                desc="A progressive web app to monitor and find CTA trains near you."
+                                color="var(--blue)"
+                            />
+                            <WorkCard
+                                icon={faMapMarkedAlt}
+                                name="Illini Tours"
+                                desc="A progressive web app to monitor and find CTA trains near you."
+                                color="var(--yellow)"
+                            />
                         </Row>
                         <br />
                         <Row  justify="between">
-                            <WorkCard />
-                            <WorkCard />
+                            <WorkCard
+                                icon={faSubway}
+                                name="L-Scout"
+                                desc="A progressive web app to monitor and find CTA trains near you."
+                                color="var(--green)"
+                            />
+                            <WorkCard
+                                icon={faSubway}
+                                name="L-Scout"
+                                desc="A progressive web app to monitor and find CTA trains near you."
+                                color="var(--magenta)"
+                            />
                         </Row>
                     </Container>
                 </section>

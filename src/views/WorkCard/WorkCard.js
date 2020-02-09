@@ -1,6 +1,7 @@
 import {Col, Row} from "react-grid-system";
 import React from 'react';
 import './WorkCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class WorkCard extends React.Component {
     state = {
@@ -9,13 +10,12 @@ class WorkCard extends React.Component {
 
     render() {
         return(
-            <Col lg={5.9} md={5.8} className="work-card">
-                <img src={this.props.photo} style={{width: "100%"}} alt=""/>
-                <span className="gutter-wrapper">
-                    <h3>{this.props.name}Train Tracker</h3>
-                    <p>{this.props.desc}A progressive web app to monitor and find CTA trains near you.</p>
-                    <a href="" className="btn">Link</a>
-                </span>
+            <Col lg={5.9} md={5.8} className="work-card" style={{backgroundColor: this.props.color}}>
+                <a href="#read-more" className="link-wrapper">
+                    <h3><FontAwesomeIcon icon={this.props.icon} /> {this.props.name}</h3>
+                    <p>{this.props.desc}</p>
+                    <div className="btn">Read More &rarr;</div>
+                </a>
             </Col>
         );
     }

@@ -11,6 +11,13 @@
     margin: 0;
 }
 
+#mast .dash {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #mast p {
     font-weight: 500;
     font-size: 20px;
