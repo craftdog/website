@@ -16,7 +16,8 @@
     "@svgr/cli": "^5.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-grid-system": "^6.1.0"
+    "react-grid-system": "^6.1.0",
+    "sal.js": "^0.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

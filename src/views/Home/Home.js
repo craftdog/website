@@ -8,9 +8,8 @@ import Nav from "../../components/Nav/Nav";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import WorkCard from "../WorkCard/WorkCard";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faCodeBranch, faPencilRuler, faSitemap, faSubway, faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faCodeBranch, faPencilRuler, faSitemap, faSubway, faMapMarkedAlt, faQrcode, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import Icon from '../../Icons/Icon'
 import HeaderImage from "../../components/HeaderImage/HeaderImage";
 
@@ -75,29 +74,33 @@ class Home extends React.Component {
                             <WorkCard
                                 icon={faSubway}
                                 name="L-Scout"
-                                desc="A progressive web app to monitor and find CTA trains near you."
+                                desc="An installable progressive web app build to allow you to easily monitor and find nearby CTA trains."
                                 color="var(--blue)"
+                                link="#lscout"
                             />
                             <WorkCard
                                 icon={faMapMarkedAlt}
                                 name="Illini Tours"
-                                desc="A progressive web app to monitor and find CTA trains near you."
+                                desc="An augmented reality game to engagingly introduce new and prospective students to the UIUC campus."
                                 color="var(--yellow)"
+                                link="#illinitours"
                             />
                         </Row>
                         <br />
-                        <Row  justify="between">
+                        <Row style={{marginTop: "5px"}} justify="between">
                             <WorkCard
-                                icon={faSubway}
-                                name="L-Scout"
-                                desc="A progressive web app to monitor and find CTA trains near you."
+                                icon={faQrcode}
+                                name="SocialHacks App"
+                                desc="A web application to manage the SocialHacks hackathon held at the University of Illinois."
                                 color="var(--green)"
+                                link="#socialhacks"
                             />
                             <WorkCard
-                                icon={faSubway}
-                                name="L-Scout"
-                                desc="A progressive web app to monitor and find CTA trains near you."
-                                color="var(--magenta)"
+                                icon={faQuestionCircle}
+                                name="Coming Soon"
+                                desc="We're always bouncing around ideas. Check back here later and something may have popped up."
+                                color="grey"
+                                link=""
                             />
                         </Row>
                     </Container>
@@ -105,7 +108,12 @@ class Home extends React.Component {
                 <section id="about">
                     <Container>
                         <h1>About Us</h1>
-                        <h2><Icon fill={"#fff"} style={{height: "1em", width: "auto", marginBottom: "-0.15em", marginRight: "0.15em"}} />Craftdog is a creative partnership founded in 2020</h2>
+                        <h2><Icon fill={"#fff"} style={{height: "1em", width: "auto", marginBottom: "-0.15em", marginRight: "0.15em"}} />
+                        Craftdog is a creative partnership founded in 2020</h2>
+                        <p>We are two University of Illinois students applying our studies in the areas of
+                             <span style={{color: "var(--magenta)"}}> software engineering</span>,
+                            <span style={{color: "var(--blue)"}}> design thinking</span> and <span style={{color: "var(--yellow)"}}>creative problem solving</span>.
+                        </p>
                             <ProfileCard
                                 name="Siraj Chokshi"
                                 desc="Siraj is a UX designer and frontend developer. He currently attends the University of Illinois at Urbana-Champaign and applies his coursework in Computer Science, Cognitive Psychology and Design on product design and software development."

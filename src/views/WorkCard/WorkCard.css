@@ -6,7 +6,7 @@
     position: relative;
     background-color: var(--dark-color);
     border-radius: 15px;
-    height: 200px;
+    min-height: calc(300px - 6vw);
     box-shadow:
             0 2.8px 2.2px rgba(0, 0, 0, 0.006),
             0 6.7px 5.3px rgba(0, 0, 0, 0.008),
@@ -51,4 +51,16 @@
 
 .work-card p {
     font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 9px;
+    margin: 0;
+    font-size: 16px;
+    padding: 13px 20px;
+    font-weight: 700;
 }

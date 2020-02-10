@@ -10,13 +10,15 @@ class WorkCard extends React.Component {
 
     render() {
         return(
-            <Col lg={5.9} md={5.8} className="work-card" style={{backgroundColor: this.props.color}}>
-                <a href="#read-more" className="link-wrapper">
-                    <h3><FontAwesomeIcon icon={this.props.icon} /> {this.props.name}</h3>
-                    <p>{this.props.desc}</p>
-                    <div className="btn">Read More &rarr;</div>
-                </a>
-            </Col>
+                <Col md={6}>
+                    <div className="work-card" style={{backgroundColor: this.props.color}}>
+                    <a href={this.props.link !== "" ? this.props.link : false} className="link-wrapper">
+                        <h3><FontAwesomeIcon icon={this.props.icon} /> {this.props.name}</h3>
+                        <p>{this.props.desc}</p>
+                        {this.props.link !== "" ? (<div className="btn" style={{color: this.props.color}}>Read More &rarr;</div>) : <></>}
+                    </a>
+                    </div>
+                </Col>
         );
     }
 }
