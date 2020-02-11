@@ -67,13 +67,16 @@ nav a img {
 
     nav a#logo {
         float: none;
-        text-align: center;
-        margin: 0 auto;
+        text-align: left;
         display: block;
-        width: 55%;
+        width: 45%;
     }
 
     #mast {
-        padding-top: 0;
+        padding-top: 50px;
+    }
+
+    .dash {
+        display: none;
     }
 }

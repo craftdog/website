@@ -112,8 +112,8 @@ class Home extends React.Component {
                         <h2><Icon fill={"#fff"} style={{height: "1em", width: "auto", marginBottom: "-0.15em", marginRight: "0.15em"}} />
                         Craftdog is a creative partnership founded in 2020</h2>
                         <p>We are two University of Illinois students applying our studies in the areas of
-                             <span style={{color: "var(--magenta)"}}> software engineering</span>,
-                            <span style={{color: "var(--blue)"}}> design thinking</span> and <span style={{color: "var(--yellow)"}}>creative problem solving</span>.
+                             <span style={{color: "var(--magenta)", fontWeight: 600}}> software engineering</span>,
+                            <span style={{color: "var(--blue)", fontWeight: 600}}> design thinking</span> and <span style={{color: "var(--yellow)", fontWeight: 600}}>creative problem solving</span>.
                         </p>
                             <ProfileCard
                                 name="Siraj Chokshi"
