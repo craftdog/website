@@ -9,7 +9,8 @@ import ProfileCard from "../ProfileCard/ProfileCard";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import WorkCard from "../WorkCard/WorkCard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faCodeBranch, faPencilRuler, faSitemap, faSubway, faMapMarkedAlt, faQrcode, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faCodeBranch, faPencilRuler, faSitemap, faSubway, faMapMarkedAlt, faQrcode, faQuestionCircle, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faDribbble, faGithub, faMedium } from "@fortawesome/free-brands-svg-icons";
 import Icon from '../../Icons/Icon'
 import HeaderImage from "../../components/HeaderImage/HeaderImage";
 
@@ -86,8 +87,8 @@ class Home extends React.Component {
                                 link="#illinitours"
                             />
                         </Row>
-                        <br />
-                        <Row style={{marginTop: "5px"}} justify="between">
+                        <br id="break-work" style={{marginTop: "5px"}} />
+                        <Row justify="between">
                             <WorkCard
                                 icon={faQrcode}
                                 name="SocialHacks App"
@@ -137,12 +138,19 @@ class Home extends React.Component {
                 <section id="contact">
                     <Container>
                         <h1>Contact Us</h1>
+                        <ul>
+                            <li><a href="mailto:mail@craftdog.co" style={{color: "var(--blue)"}}><FontAwesomeIcon icon={faPaperPlane} /> mail@craftdog.co</a></li>
+                            <li><a href="https://github.com/craftdog" target="_blank" rel="noreferrer noopener" style={{color: "var(--dark-color)"}}><FontAwesomeIcon icon={faGithub} /> Github</a></li>
+                            <li><a href="https://dribbble.com/sirajchokshi" style={{color: "var(--magenta)"}}><FontAwesomeIcon icon={faDribbble} /> Dribbble</a></li>
+                            <li><a href="" style={{color: "var(--green)"}}><FontAwesomeIcon icon={faMedium} /> Medium</a></li>
+                        </ul>
                     </Container>
                 </section>
                 <footer>
                     <Container>
                         <p>Copyright &copy; {new Date().getFullYear()}&nbsp;
-                            <Icon fill={"#0C041F"} style={{height: "1em", width: "auto", marginBottom: "-0.15em", marginRight: "0.15em"}} /><span style={{fontWeight: 600}}>Craftdog</span>. Made with <FontAwesomeIcon color={"#EF5454"} icon={faHeart} /> in Chicago &times; Boston
+                            {/*<Icon fill={"rgb(90, 72, 216)"} style={{height: "1em", width: "auto", marginBottom: "-0.075em", marginRight: "0.15em"}} />*/}
+                            Craftdog. Made with <FontAwesomeIcon color={"var(--red)"} icon={faHeart} /> in Chicago &times; Boston
                         </p>
                     </Container>
                 </footer>

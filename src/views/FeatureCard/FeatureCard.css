@@ -22,6 +22,16 @@
     padding: 30px 30px !important;
 }
 
+@media screen and (max-width: 768px) {
+    .feature-card {
+        box-shadow: none;
+        background: none;
+        border-radius: 0;
+        height: auto;
+
+    }
+}
+
 .feature-card h3 {
     margin: 20px 0 20px 0;
     font-size: 18px;
@@ -41,6 +51,16 @@
     -ms-transform: translateY(-3px);
     -o-transform: translateY(-3px);
     transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+    .feature-card:hover {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 .feature-card .feature-icon {

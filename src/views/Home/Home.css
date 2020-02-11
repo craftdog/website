@@ -28,6 +28,13 @@ h1 {
     font-size: 40px;
 }
 
-/**:hover {*/
-/*    transform: translateY(0) !important;*/
-/*}*/
+footer {
+    padding: 20px 0;
+    background-color: var(--green);
+}
+
+footer {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
