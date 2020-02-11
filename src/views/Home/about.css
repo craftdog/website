@@ -92,9 +92,9 @@
     font-size: 30px;
 }
 
-#about .profile-card a.bio-link:hover {
-    color(--blue);
-}
+/*#about .profile-card a.bio-link:hover {*/
+/*    color: var(--magenta);*/
+/*}*/
 
 #contact {
     padding: 61px 0;
