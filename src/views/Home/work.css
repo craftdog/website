@@ -3,6 +3,11 @@
     padding-bottom: 10vh;
 }
 
+#our-work {
+    display: block;
+    height: 8vh;
+}
+
 #work h1 {
     color: var(--dark-color);
 }
