@@ -33,22 +33,23 @@ class Home extends React.Component {
                                     We make cool software.
                                 </h1>
                                 <p>We make cool and usable software. Check out our work and feel free to contact us below.</p>
-                                <a href="" className="btn">Contact Us</a>
-                                <a href="" className="btn secondary">Check Out Our Work</a>
+                                <a href="#contact" className="btn">Contact Us</a>
+                                <a href="#work" className="btn secondary">Check Out Our Work</a>
                             </Col>
                             <Col lg={6} md={5}>
                                 <HeaderImage />
                             </Col>
                         </Row>
                     </Container>
+                    <div id="clip" />
                 </section>
                 <section id="work">
                     <Container style={{position: "relative"}}>
-                        <Visible md lg xl>
+                        <Visible lg xl>
                          <a href="#our-work" id="scroll-button">&larr; SCROLL</a>
                         </Visible>
                         <div className="feature-card-wrapper">
-                            <Row justify="between">
+                            <Row justify="between" >
                                 <FeatureCard
                                     icon={faPencilRuler}
                                     name="UI/UX Design"
@@ -91,10 +92,10 @@ class Home extends React.Component {
                         <Row justify="between">
                             <WorkCard
                                 icon={faQrcode}
-                                name="SocialHacks App"
-                                desc="A web application to manage the SocialHacks hackathon held at the University of Illinois."
+                                name="Confer"
+                                desc="An open-source SaaS and client to manage student run hackathons/conferences."
                                 color="var(--green)"
-                                link="#socialhacks"
+                                link="https://github.com/craftdog/confer"
                             />
                             <WorkCard
                                 icon={faQuestionCircle}
@@ -109,18 +110,22 @@ class Home extends React.Component {
                 <section id="about">
                     <Container>
                         <h1>About Us</h1>
-                        <h2><Icon fill={"#fff"} style={{height: "1em", width: "auto", marginBottom: "-0.15em", marginRight: "0.15em"}} />
-                        Craftdog is a creative partnership founded in 2020</h2>
-                        <p>We are two University of Illinois students applying our studies in the areas of
-                             <span style={{color: "var(--magenta)", fontWeight: 600}}> software engineering</span>,
-                            <span style={{color: "var(--blue)", fontWeight: 600}}> design thinking</span> and <span style={{color: "var(--yellow)", fontWeight: 600}}>creative problem solving</span>.
+                        <h2>
+                            <Icon fill={"#fff"} style={{height: "1em", width: "auto", marginBottom: "-0.15em", marginRight: "0.15em"}} />
+                            Craftdog is a creative partnership founded in 2020
+                        </h2>
+                        <p>
+                            We are two University of Illinois students applying our studies in the areas of
+                            <span style={{color: "var(--magenta)", fontWeight: 600}}> software engineering</span>,
+                            <span style={{color: "var(--blue)", fontWeight: 600}}> design thinking</span> and&nbsp;
+                            <span style={{color: "var(--yellow)", fontWeight: 600}}>creative problem solving</span>.
                         </p>
                             <ProfileCard
                                 name="Siraj Chokshi"
-                                desc="Siraj is a UX designer and frontend developer. He currently attends the University of Illinois at Urbana-Champaign and applies his coursework in Computer Science, Cognitive Psychology and Design on product design and software development."
-                                photo="https://media-exp1.licdn.com/dms/image/C4E03AQH3ZuJUgFiHLw/profile-displayphoto-shrink_200_200/0?e=1586390400&v=beta&t=wf-3jubA70o3vg-qkEmrirGpjk3alNYAiCY48BVNOtY"
+                                desc="Siraj is a software engineer with a design background. He currently attends the University of Illinois at Urbana-Champaign and applies his coursework in Computer Science, Cognitive Psychology and Design in product design and software development."
+                                photo="https://media-exp1.licdn.com/dms/image/C4E03AQH3ZuJUgFiHLw/profile-displayphoto-shrink_200_200/0?e=1606348800&v=beta&t=q-9Z_1CXHCutJDA9v2uc2W12WcUj4CHQw3DJU206qAw"
                                 link="https://sirajchokshi.com"
-                                skills = {["UI/UX", "Frontend Development", "JavaScript", "React.JS", "Python", "Java", "C#"]}
+                                skills = {["JavaScript/TypeScript", "Python", "C#", "Go", "Java", "Software Development"]}
                                 linkedin="sirajchokshi"
                                 github="sirajchokshi"
                             />
@@ -128,7 +133,7 @@ class Home extends React.Component {
                                 name="Aaron Alberg"
                                 desc="Aaron is currently studying computer science at the University of Illinois at Urbana-Champaign. He's passionate about applying human-centered design principles to projects ranging from software development to community outreach."
                                 photo="https://avatars1.githubusercontent.com/u/55102496"
-                                skills = {["Software Development", "Java", "Android Studio", "React.JS", "HTML/CSS"]}
+                                skills = {["Java", "C++", "C#", "JavaScript", "Python", "Software Development"]}
                                 link="https://aaronalberg.com"
                                 linkedin="aaron-alberg"
                                 github="aaronalberg"
@@ -139,7 +144,7 @@ class Home extends React.Component {
                     <Container>
                         <h1>Contact Us</h1>
                         <ul>
-                            <li><a href="mailto:mail@craftdog.co" style={{color: "var(--blue)"}}><FontAwesomeIcon icon={faPaperPlane} /> mail@craftdog.co</a></li>
+                            <li><a href="mailto:mail@craftdog.dev" style={{color: "var(--blue)"}}><FontAwesomeIcon icon={faPaperPlane} /> mail@craftdog.dev</a></li>
                             <li><a href="https://github.com/craftdog" target="_blank" rel="noreferrer noopener" style={{color: "var(--dark-color)"}}><FontAwesomeIcon icon={faGithub} /> Github</a></li>
                             <li><a href="https://dribbble.com/sirajchokshi" style={{color: "var(--magenta)"}}><FontAwesomeIcon icon={faDribbble} /> Dribbble</a></li>
                             <li><a href="" style={{color: "var(--green)"}}><FontAwesomeIcon icon={faMedium} /> Medium</a></li>
@@ -148,6 +153,7 @@ class Home extends React.Component {
                 </section>
                 <footer>
                     <Container>
+                        <Icon fill={"#86868f"} style={{height: "1.6em", width: "auto", marginBottom: 0}} />
                         <p>Copyright &copy; {new Date().getFullYear()}&nbsp;
                             {/*<Icon fill={"rgb(90, 72, 216)"} style={{height: "1em", width: "auto", marginBottom: "-0.075em", marginRight: "0.15em"}} />*/}
                             Craftdog. Made with <FontAwesomeIcon color={"var(--red)"} icon={faHeart} /> in Chicago &times; Boston

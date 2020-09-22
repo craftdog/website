@@ -15,7 +15,7 @@ class FeatureCard extends React.Component {
 
     render() {
         return(
-            <Col md={3.8} className="feature-card">
+            <Col lg={3.8} className="feature-card">
                 <span className="feature-icon"><FontAwesomeIcon icon={this.props.icon} /></span>
                 <h3>{this.props.name}</h3>
                 <p>{this.props.desc}</p>

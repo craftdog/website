@@ -1,7 +1,8 @@
 #about {
     background: #0C041F;
     min-height: 50vh;
-    padding: 61px 0;
+    padding: 100px 0;
+    clip-path: ellipse(150% 100% at 50% 0%) /* ellipse(150% 100% at 50% 100%); */
 }
 
 #about * {
@@ -9,11 +10,11 @@
 }
 
 #about .profile-card {
-    background-color: rgba(255,255,255,0.05);
-    border-radius: 15px;
+    /* background-color: rgba(255,255,255,0.05); */
+    /* border-radius: 15px; */
     overflow: hidden;
     padding: 0 !important;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 #about .profile-card img {
@@ -30,6 +31,11 @@
 #about .info-wrapper .bio-link {
     margin-right: 10px;
     text-decoration: none;
+    opacity: 0.6;
+}
+
+#about .info-wrapper .bio-link:hover {
+    opacity: 1;
 }
 
 #about .skills {
@@ -111,13 +117,13 @@
 
 #contact ul li a {
     color: #0C041F;
-    font-size: 72px;
+    font-size: 64px;
     font-weight: 700;
     text-decoration: none;
     line-height: 1.5;
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 780px) {
     #contact ul li a {
         font-size: 36px;
     }

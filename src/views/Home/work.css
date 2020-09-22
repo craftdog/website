@@ -8,7 +8,7 @@
 }
 
 #work .feature-card-wrapper {
-    margin: -32px auto 0;
+    margin: -96px auto 0;
     width: 88%;
 }
 
@@ -27,7 +27,7 @@
     transform: rotate(270deg);
     font-weight: 600;
     left: -1.2em;
-    top: 5.5em;
+    top: 6.5em;
     text-decoration: none;
     font-size: 18px;
     color: rgba(12,4,31,0.60);

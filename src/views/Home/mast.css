@@ -1,14 +1,17 @@
 #mast {
     background-color: var(--main-color);
     color: white;
-    min-height: 70vh;
+    min-height: 75vh;
     padding-top: 100px;
+    position: relative;
+    clip-path: ellipse(150% 95% at 50% 0%);
 }
 
 #mast h1 {
     color: #FFFFFF;
     padding: 0;
     margin: 0;
+    line-height: 1.2;
 }
 
 #mast .dash {
@@ -24,6 +27,7 @@
     padding: 0;
     margin: 32px 0;
     color: rgba(255,255,255,0.60);
+    line-height: 1.5;
 }
 
 #mast a.btn {
