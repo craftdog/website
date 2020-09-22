@@ -34,7 +34,7 @@ class Home extends React.Component {
                                 </h1>
                                 <p>We make cool and usable software. Check out our work and feel free to contact us below.</p>
                                 <a href="#contact" className="btn">Contact Us</a>
-                                <a href="#work" className="btn secondary">Check Out Our Work</a>
+                                <a href="#our-work" className="btn secondary">Check Out Our Work</a>
                             </Col>
                             <Col lg={6} md={5}>
                                 <HeaderImage />

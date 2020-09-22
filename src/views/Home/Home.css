@@ -9,6 +9,13 @@
     --green: #41CBA0;
     --blue: #3391FF;
     --magenta: #EB2680;
+    --clip-curve: ellipse(150% 95% at 50% 0%);
+}
+
+@media screen and (max-width: 992px) {
+    :root {
+        --clip-curve: none;
+    }
 }
 
 html, body {

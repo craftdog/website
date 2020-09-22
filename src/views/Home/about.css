@@ -1,8 +1,8 @@
 #about {
     background: #0C041F;
     min-height: 50vh;
-    padding: 100px 0;
-    clip-path: ellipse(150% 100% at 50% 0%) /* ellipse(150% 100% at 50% 100%); */
+    padding: 100px 0 175px;
+    clip-path: var(--clip-curve);
 }
 
 #about * {

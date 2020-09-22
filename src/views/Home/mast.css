@@ -4,7 +4,7 @@
     min-height: 75vh;
     padding-top: 100px;
     position: relative;
-    clip-path: ellipse(150% 95% at 50% 0%);
+    clip-path: var(--clip-curve);
 }
 
 #mast h1 {
