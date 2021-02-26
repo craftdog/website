@@ -1,64 +1,69 @@
-@import '../../../node_modules/sal.js/dist/sal.css';
+@import "../../../node_modules/sal.js/dist/sal.css";
 
 :root {
-    --main-color: rgb(90, 72, 216);
-    --dark-color: #0C041F;
-    --light-color: #F6F6F9;
-    --red: #EF5454;
-    --yellow: #EFC654;
-    --green: #41CBA0;
-    --blue: #3391FF;
-    --magenta: #EB2680;
-    --clip-curve: ellipse(150% 95% at 50% 0%);
+  --main-color: rgb(90, 72, 216);
+  --dark-color: #0c041f;
+  --light-color: #f6f6f9;
+  --red: #ef5454;
+  --yellow: #efc654;
+  --green: #41cba0;
+  --blue: #3391ff;
+  --magenta: #eb2680;
+  --clip-curve: ellipse(150% 95% at 50% 0%);
 }
 
 @media screen and (max-width: 992px) {
-    :root {
-        --clip-curve: none;
-    }
+  :root {
+    --clip-curve: none;
+  }
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--light-color);
-    scroll-behavior: smooth;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-color);
+  scroll-behavior: smooth;
 }
 
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 40px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 footer {
-    margin-top: 35px;
-    padding: 60px 0 35px 0;
-    /* background-color: var(--light-color); */
-    background-color: #e9e9f2;
-    /* clip-path: ellipse(70% 95% at 50% 100%); */
+  margin-top: 35px;
+  padding: 60px 0 35px 0;
+  /* background-color: var(--light-color); */
+  background-color: #e9e9f2;
+  /* clip-path: ellipse(70% 95% at 50% 100%); */
 }
 
 footer {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    color: #86868f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #86868f;
 }
 
 footer p {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
